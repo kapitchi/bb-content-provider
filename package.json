@@ -1,0 +1,24 @@
+{
+  "name": "@kapitchi/bb-content-provider",
+  "version": "0.0.0",
+  "description": "Content provider services",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "NODE_ENV=testing mocha",
+    "build": "npm run docs",
+    "docs": "jsdoc2md --configure jsdoc.json --template README.hbs.md \"src/**/*.js\" > README.md"
+  },
+  "author": "Matus Zeman <matus.zeman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@kapitchi/bb-dic": "^1.5.4",
+    "@kapitchi/bb-service": "^1.4.1",
+    "aws-sdk": "^2.191.0",
+    "lodash": "^4.17.5",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
