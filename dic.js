@@ -4,7 +4,7 @@ const dic = new Dic();
 const loader = new DicLoader({
   rootDir: __dirname + '/src/services'
 });
-loader.loadPath(dic, ['**.js', '!**.spec.js']);
+loader.loadPath(dic, ['**/*.js', '!**/*.spec.js']);
 
 module.exports = {
   dic
